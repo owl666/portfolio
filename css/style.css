@@ -266,7 +266,9 @@ header.wrapper {
 .post img {
 	width: 100%;
 }
-
+.post-in a {
+	float: right;
+}
 .post-in p {
 	line-height: 1.375;
 	margin-top: 15px;
