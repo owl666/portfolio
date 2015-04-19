@@ -1,0 +1,125 @@
+body {
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #7c7c7c;
+}
+p {
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #595959;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 44px;
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
+h5, h6 {
+	font-size: 16px;
+}
+.button {
+	font-size: 24px;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+	color: #BDBDBD;
+	border: 2px solid #BDBDBD;
+	background-color: rgba(190, 190, 190, 0.1);
+	padding: 15px;
+	width: 160px;
+	margin-right: 15px;
+}
+.button:hover {
+	background-color: rgba(190, 190, 190, 0.4);
+}
+
+.line hr{
+	background-color: #88CCD8;
+	width: 110px;
+	height: 9px;
+	border: none;
+}
+
+/* HEADER */
+header.wrapper {
+	background-image: url('../img/cover.jpeg');
+	background-size: cover;
+}
+.menu-btn {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+}
+.wrapper {
+	padding: 80px 160px 115px 160px;
+}
+.header h1 {
+	font-family: 'Lobster Two', cursive, sans-serif;
+	color: #fff;
+	font-weight: 200;
+	text-transform: none;
+}
+.header p {
+	font-size: 24px;
+	color: #1f98ad;
+	margin-bottom: 30px;
+}
+.photo img {
+	margin-bottom: 20px;
+	padding-top: 40px;
+}
+
+
+/* About Section */
+.style1 {
+	background-color: #F3F3F3;
+}
+
+.about, .services, .portfolio {
+	text-transform: uppercase;
+}
+.about .ba-grid {
+	margin-top: 75px;
+}
+.about p {
+	line-height: 2;
+}
+.style1 .ba-grid {
+	text-align: left;
+}
+.byline {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+/* Services Section Style 2 */
+
+.style2 {
+	background-image: url('../img/srevices.jpeg');
+	background-size: cover;
+	color: #F3F3F3;
+	text-transform: uppercase;
+}
+.style2 h5,
+.style2 h2 {
+	color: #F3F3F3;
+}
+.services .ba-grid {
+	margin-top: 75px;
+	opacity: 0.7;
+}
+.style2 i {
+	margin-bottom: 20px;
+}
