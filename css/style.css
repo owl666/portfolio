@@ -143,17 +143,17 @@ header.wrapper {
 	width: 100%;
 }
 .images img {
-	width: 258px;
+	width: 100%;
 	float:left;
 	margin: 0;
 	padding: 0;
 }
 [class*=mask] img {
 	border-radius: 50%;
-	width: 55px;
+	width: 20%;
 	display: inline-block;
 	position: absolute;
-	top:40px;
+	top: 13%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -163,7 +163,7 @@ header.wrapper {
 	text-transform: none;
 	font-size: 16px;
 	position: absolute;
-	top: 135px;
+	top: 65%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -172,7 +172,7 @@ header.wrapper {
 [class*=mask] a {
 	text-decoration: none;
 	position: absolute;
-	top:105px;
+	top: 50%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -186,8 +186,8 @@ header.wrapper {
 	top: 0;
 	left: 0;
 	background-color: rgba(10, 13, 20, 0.85);
-	width: 258px;
-	height: 194px;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	opacity: 0;
 	transition: opacity 0.5s;
@@ -200,7 +200,7 @@ header.wrapper {
 .rel {
 	position: relative;
 	float: left;
-	width:25%;
+	width: 25%;
 	margin: 0;
 	padding: 0;
 }
