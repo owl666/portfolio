@@ -336,6 +336,6 @@ header.wrapper {
 	font-size: 22px;
 	margin-left: 5px;
 }
-.icons a:hover {
-	color: #39424b;
+.icons i:hover {
+	color: #24292f;
 }
