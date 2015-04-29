@@ -294,7 +294,8 @@ header.wrapper {
 
 .status {
 	background-image: url('../img/status.jpeg');
-	padding: 250px 0 130px;
+	background-size: cover;
+	padding: 15% 0 5%;
 }
 
 .circle-big {
