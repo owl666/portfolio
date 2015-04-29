@@ -5,6 +5,7 @@ body {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	color: #7c7c7c;
+	line-height: 1.3;
 }
 p {
 	margin-bottom: 20px;
@@ -60,7 +61,6 @@ h5, h6 {
 	background-color: #64C9DB;
 	padding: 15px 12px;
 	display: inline-block;
-	margin-left: 115px;
 	border: 1px solid #64C9DB;
 	transition: color .5s, background-color .5s;
 }
@@ -103,7 +103,7 @@ header.wrapper {
 	right: 10%;
 }
 .wrapper {
-	padding: 80px 160px 115px 160px;
+	/*padding: 80px 160px 115px 160px;*/
 }
 .header h1 {
 	font-family: 'Lobster Two', cursive, sans-serif;
@@ -130,9 +130,7 @@ header.wrapper {
 .about, .services, .portfolio {
 	text-transform: uppercase;
 }
-.about .ba-grid {
-	margin-top: 75px;
-}
+
 .about p {
 	line-height: 2;
 }
@@ -158,7 +156,6 @@ header.wrapper {
 	color: #F3F3F3;
 }
 .services .ba-grid {
-	margin-top: 75px;
 	opacity: 0.7;
 }
 .style2 i {
@@ -176,11 +173,10 @@ header.wrapper {
 
 /* PORTFOLIO Styles */
 
-.wrapper.portfolio {
+.ba-container.portfolio {
 	padding-bottom: 0;
 }
 .images {
-	padding-top: 55px;
 	width: 100%;
 }
 .images img {
@@ -189,40 +185,18 @@ header.wrapper {
 	margin: 0;
 	padding: 0;
 }
-[class*=mask] img {
-	border-radius: 50%;
-	width: 20%;
-	display: inline-block;
-	position: absolute;
-	top: 13%;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-[class*=mask] p {
+.portfolio-description p {
 	color: #cfcfcf;
 	text-transform: none;
 	font-size: 16px;
-	position: absolute;
-	top: 65%;
-	left: 0;
-	right: 0;
 	margin: auto;
 	font-weight: 400;
 }
-[class*=mask] a {
-	text-decoration: none;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	margin: auto;
-	color: #cfcfcf;
-	text-transform: none;
-	font-size: 24px;
-	font-weight: 200;
+.portfolio-description h4 {
+	margin-bottom: 5px;
+	font-weight: normal;
 }
-.images [class*=mask] {
+.portfolio-description {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -230,15 +204,33 @@ header.wrapper {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	opacity: 0;
-	transition: opacity 0.5s;
+	visibility: hidden;
 	cursor: pointer;
+	padding-top: 90px;
 }
-.images [class*=mask]:hover {
-	opacity: 1;
-	transition: opacity 0.5s;
+.portfolio-description:before {
+	content:"+";
+	color: white;
+	font-size: 66px;
+	font-weight: 200;
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	text-align: center;
+	line-height: 56px;
+	border-radius: 50%;
+	background: #383838;
+	top: 25px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	opacity: .7;
 }
-.rel {
+.portfolio-item:hover .portfolio-description {
+	visibility: visible;
+	transition: 0.2s;
+}
+.portfolio-item {
 	position: relative;
 	float: left;
 	width: 25%;
@@ -251,7 +243,6 @@ header.wrapper {
 .blog .ba-grid {
 	margin-left: -65px;
 	margin-bottom: 55px;
-	margin-top: 70px;
 }
 .blog .ba-grid > [class*="ba-width"] {
 	padding-left: 65px;
@@ -295,7 +286,7 @@ header.wrapper {
 .blog-underline a {
 	text-transform: uppercase;
 }
-.wrapper.blog {
+.ba-container.blog {
 	padding-bottom: 75px;
 }
 
@@ -363,7 +354,7 @@ header.wrapper {
 }
 /* Footer Styles */
 
-.wrapper.footer {
+.ba-container.footer {
 	padding: 50px 90px 25px 90px;
 }
 .footer p {
@@ -395,4 +386,19 @@ header.wrapper {
 }
 .icons i:hover {
 	color: #24292f;
+}
+.header-line {
+	position: relative;
+	margin: 0 auto 75px;
+}
+.header-line:after {
+	position: absolute;
+	content: '';
+	background-color: #88CCD8;
+	width: 110px;
+	height: 9px;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
